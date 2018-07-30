@@ -36,9 +36,7 @@ For example, you can run a `Oracle Java 8` container with the following command:
    (alternatively, you can build an image from Dockerfile: `docker build -t="dockerfile/java" github.com/dockerfile/java`)
 
 
-### Usage
 
-    docker run -it --rm dockerfile/java
 
 #### Run `java`
 
@@ -47,3 +45,7 @@ For example, you can run a `Oracle Java 8` container with the following command:
 #### Run `javac`
 
     docker run -it --rm dockerfile/java javac
+    
+### Usage
+
+    docker run -it --rm dockerfile/java
