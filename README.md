@@ -49,3 +49,34 @@ For example, you can run a `Oracle Java 8` container with the following command:
 ### Usage
 
     docker run -it --rm dockerfile/java
+    
+    dockerfile/java provides multiple tagged images:
+
+latest (default): OpenJDK Java 7 JRE (alias to openjdk-7-jre)
+openjdk-6-jdk: OpenJDK Java 6 JDK
+openjdk-6-jre: OpenJDK Java 6 JRE
+openjdk-7-jdk: OpenJDK Java 7 JDK
+openjdk-7-jre: OpenJDK Java 7 JRE
+oracle-java6: Oracle Java 6 JDK
+oracle-java7: Oracle Java 7 JDK
+oracle-java8: Oracle Java 8 JDK
+For example, you can run a Oracle Java 8 container with the following command:
+
+docker run -it --rm dockerfile/java:oracle-java8 java -version
+Installation
+
+Install Docker.
+
+Download automated build from public Docker Hub Registry: docker pull dockerfile/java
+
+(alternatively, you can build an image from Dockerfile: docker build -t="dockerfile/java" github.com/dockerfile/java)
+
+Run java
+
+docker run -it --rm dockerfile/java java
+Run javac
+
+docker run -it --rm dockerfile/java javac
+Usage
+
+docker run -it --rm dockerfile/java
